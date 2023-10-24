@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <script src="./script.js"></script>
+    <title>Notizblock</title>
+</head>
+
+<body onload="showPosts()">
+    <div>
+        <header>
+            <h1>Notizblock</h1>
+        </header>
+    </div>
+
+    <div class="trash-container">
+        <a onclick="showTrash()" href="#"><img src="./img/trash.png" alt="Trash"></a>
+    </div>
+
+    <div class="dialog-container">
+        <div class="dialog-bg">
+
+            <div class="dialog">
+
+                
+                <textarea placeholder="Titel eingeben..." id="title"></textarea>
+                <textarea placeholder="Notiz schreiben..." id="message"></textarea>
+
+                <button onclick="addPost()">Add</button>
+            </div>
+        </div>
+
+
+    </div> 
+
+    <div class="post-container">
+        <div id="myposts"></div>
+        <div id="trashPosts"></div>
+        <button onclick="restorePosts()">restore</button>
+
+        
+    </div>
+
+</body>
+
+</html>
